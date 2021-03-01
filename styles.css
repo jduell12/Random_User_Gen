@@ -42,7 +42,7 @@ img{
 }
 
 button{
-    cursor: poitner;
+    cursor: pointer;
     display: inline-block;
     background: #333;
     color: white;
