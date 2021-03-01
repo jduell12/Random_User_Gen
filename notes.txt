@@ -1,0 +1,31 @@
+Vue Project Notes
+
+* Can hook up Vue to application through script in index.html or through CLI from Vue. (This project is using the script in index.html)
+
+* Create a Vue instance in a js file (app.js for this application)
+
+* Vue instance template:
+    const app = Vue.createApp({
+        template: ''
+        data() {
+            return {
+                
+            },
+        },
+        methods:{
+            
+        }
+    );
+
+    app.mount("#app");
+
+    - template is a string with base html 
+    - app.mount renders the Vue instance to index.html if there is an element with an id of app 
+    - to render elements from the data function you need {{ }} which can be used in the template or index.html (as long as it's within the #app container)
+
+* Vue bind things to elements - two ways:
+    v-bind:src="" (what's inside "" is the key for something inside the Vue instance)
+    :src="" (works the same as above just s shorthand for it)
+
+* Add functions to button - two ways:
+    v-on=click="getUser()" (click is the event we are looking for and getUser is a function we create in the methods area of the Vue instance)
